@@ -1,0 +1,96 @@
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #e50914;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+form {
+    background-color: #222;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(229, 9, 20, 0.6);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+form p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="url"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="url"]:focus,
+form select:focus,
+form textarea:focus {
+    background-color: #444;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f40612;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #e50914;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f40612;
+}

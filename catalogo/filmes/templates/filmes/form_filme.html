@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>RafaFlix - Formulário de Filme</title>
+    <link rel="stylesheet" href="{% static 'filmes/form.css' %}" />
+</head>
+<body>
+    <h1>{{ form.instance.pk|yesno:"Editar Filme, Novo Filme"}}</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Salvar</button>
+    </form>
+    <a href="{% url 'lista_filmes' %}">Voltar</a>
+</body>
+</html>

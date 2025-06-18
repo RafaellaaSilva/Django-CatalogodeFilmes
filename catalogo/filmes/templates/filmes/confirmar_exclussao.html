@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>Confirmar Exclusão</title>
+    <link rel="stylesheet" href="{% static 'filmes/confitmar.css' %}" />
+</head>
+
+<body>
+    <h1>Tem certeza que deseja excluir "{{ filme.titulo }}"?</h1>
+    <form method="post" action="{% url 'deletar_filme' filme.pk %}">
+        {% csrf_token %}
+        <button type="submit">Confirmar</button>
+        <a href="{% url 'lista_filmes' %}">Cancelar</a>
+    </form>
+</body>
+</html>
